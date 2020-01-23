@@ -34,7 +34,7 @@ yarn dev
 ## Built With
 
 * [React-Native](https://github.com/facebook/react-native)
-* [Exto](https://expo.io/)
+* [Expo](https://expo.io/)
 
 ## Authors
 
