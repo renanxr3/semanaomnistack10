@@ -1,7 +1,11 @@
 import React, { Fragment } from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, YellowBox, StyleSheet, Text, View } from 'react-native';
 
-import Routes from "./src/routes"
+import Routes from "./src/routes";
+
+// YellowBox.ignoreWarnings([
+//   "Unrecognized WebSocket"
+// ]);
 
 export default function App() {
   return (
