@@ -1,0 +1,19 @@
+# backend
+/omnistack10-backend/node_modules
+
+# web
+/omnistack10-web/node_modules
+/omnistack10-web/build
+
+# mobile
+/omnistack10-mobile/node_modules
+/omnistack10-mobile/.expo/*
+/omnistack10-mobile/npm-debug.*
+/omnistack10-mobile/*.jks
+/omnistack10-mobile/*.p8
+/omnistack10-mobile/*.p12
+/omnistack10-mobile/*.key
+/omnistack10-mobile/*.mobileprovision
+/omnistack10-mobile/*.orig.*
+/omnistack10-mobile/web-build/
+/omnistack10-mobile/web-report/
