@@ -1,49 +1,46 @@
-# Dev Radar - Módulo Backend 
+<h1 align="center">Dev Radar - Módulo Backend</h1> 
 
-Projeto DevRadar desenvolvido durante a Semana Omnistack 10 da Rocketseat (Jan/2020)
-
-## Getting Started
-
-> TODO
-
-### Pré Requisitos
-
-* TODO 
+# Model: DEV
 
 ```
-TODO
+{
+  "_id": "<UID>",
+  "github": "<User do GitHub>",
+  "name": "<Nome do usuário>",
+  "bio": "<Descrição>",
+  "avatar_url": "<GitHub's Avatar URL>",
+  "techs": [ "Tech1", "Tech2", "Tech3" ],
+  "location": {
+    "coordinates": [
+      <Longitude>,
+      <Latitude>
+    ]
+  },
+  "__v": <versao>
+}
 ```
+<br>
 
-### Instalação 
+# API
 
-TODO
+## Devs
 
-```
-TODO
-```
+Rota para CRUD de devs.
 
-TODO
+| Método       | Estrutura           | Ação                              | Parâmetros          | Retorno       |
+| ------------ | ------------------- | --------------------------------- | ------------------- | ------------- |
+| ![GET][1]    | `/api/devs`         | Lista todos os devs cadastrados   | **Nenhum**          | JSON/Usuários |
+| ![POST][2]   | `/api/devs`         | Cadastra um dev no banco de dados | JSON/git,techs,geo  | JSON/Usuário  |
+| ![GET][3]    | `/api/devs/:github` | Obtem os dados de um único dev    | Rota/User do Github | JSON/Usuário  |
+| ![PUT][4]    | `/api/devs/:github` | Edita dados do dev                | Rota + JSON/campos  | JSON/Qnt,ok   |
+| ![DELETE][5] | `/api/devs/:github` | Deleta um dev                     | Rota                | 200 OK        |
 
-## Deployment
+## Search
 
-```
-yarn dev
-```
+Rota para buscar devs por tecnologias e em um raio de busca.
 
-## Built With
+| Método    | Estrutura     | Ação              | Parâmetros                     | Retorno       |
+| --------- | ------------- | ----------------- | ------------------------------ | ------------- |
+| ![GET][6] | `/api/search` | Pesquisa usuários | Query/techs,latitude,longitude | JSON/Usuários |
 
-* [Express](https://expressjs.com/)
-* [Cors](https://github.com/expressjs/cors)
 
-## Authors
-
-* [Renan Santos](https://github.com/renanxr3)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
-## Acknowledgments
-
-* [Rocketseat](https://rocketseat.com.br/)
-* [Semana Omnistack 10 ](https://rocketseat.com.br/week-10/aulas)
